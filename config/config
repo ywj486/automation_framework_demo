@@ -1,0 +1,7 @@
+[browserType]
+#browserName = Firefox
+browserName = Chrome
+
+[testServer]
+URL = http://www.baidu.com
+#URL = www.google.com
