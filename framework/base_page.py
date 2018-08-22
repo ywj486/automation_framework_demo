@@ -50,7 +50,7 @@ class BasePage(object):
         if not os.path.exists(file_path):
             os.makedirs(file_path)
         else:
-            rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
+            rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
             screen_name = file_path + rq + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
